@@ -1,49 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meine Lieblingsfilme & Serien</title>
 
-        <meta charset="utf-8">
-        <title>   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body> </title>
-	</head>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<body>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
 
-		<!--Überschrift-->
-		<h1> Die besten Filme und Serien aller Zeiten(Meine Meinung)</h1>
-		<!--Absatz-->
-		<p>
-			Filme:
-         <li> 5.Zurück in die Zukufnt Triolgie:Einfach Klassiker mit guter Musik und
-			guter Story. </li>
-			
-		<li>4.Herr der Ringe Triologie:Sehr spannende und gut geschribene Filme.
-	      3.The Dark Knight: Bester Batman Film</li>
-			
-	 <li> 2.Star Wars:Alle Filme sind Grossartig(es gibt nur 6 Filme).</li>
-			
-	<li>. 1.Spider Man:Across the Spider Verse: Die Story ist gut und die Animation
-			geisteskrank.</li>
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            font-weight: bold;
+        }
 
-			Serien:
-    <li>  5.The Mandalorian: Gute Star Wars Serie.</li>
-			
-	<li>  4.Full Metall Alchemist: Sehr Starke Serie aber Anime also nicht für jeden was.</li>
-			
-	<li>  3.Stranger Things: Staffel 1 bis 3 sind toll. Ab 4 nimmt die Qualität leider ab.</li>
-			
-	<li>. 2.Star Wars Andor: Die beste Star Wars Serie.</li>
-			
-	<li>  1.Attack on Titan: Krasser Plottwist und die beste Anime Serie </li>
-		</p>
-		<!--Liste-->
-	</ul>
-</body >
-	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        h2 {
+            margin-top: 40px;
+            border-left: 5px solid #00b4d8;
+            padding-left: 10px;
+        }
+
+        .card-custom {
+            background-color: #1e2a38;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-custom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .card-custom img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .ranking {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00b4d8;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+
 <body>
-	
+
+<h1>🎬 Die besten Filme und Serien aller Zeiten<br><small>(Meine Meinung)</small></h1>
+
+<div class="container">
+
+    <!-- FILME -->
+    <h2>Filme</h2>
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/spiderman.jpg" class="card-img-top">
+                <div class="card-body">
+                    <div class="ranking">#1</div>
+                    <h5>Spider-Man: Across the Spider-Verse</h5>
+                    <p>Unglaubliche Animation und starke Story.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/starwars.jpg">
+                <div class="card-body">
+                    <div class="ranking">#2</div>
+                    <h5>Star Wars</h5>
+                    <p>Klassiker – (für mich gibt es nur 6 Filme 😄).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/darkknight.jpg">
+                <div class="card-body">
+                    <div class="ranking">#3</div>
+                    <h5>The Dark Knight</h5>
+                    <p>Der beste Batman-Film aller Zeiten.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/lotr.jpg">
+                <div class="card-body">
+                    <div class="ranking">#4</div>
+                    <h5>Herr der Ringe</h5>
+                    <p>Episch, spannend und perfekt geschrieben.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/backtothefuture.jpg">
+                <div class="card-body">
+                    <div class="ranking">#5</div>
+                    <h5>Zurück in die Zukunft</h5>
+                    <p>Ein absoluter Klassiker mit Kultfaktor.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SERIEN -->
+    <h2>Serien</h2>
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/aot.jpg">
+                <div class="card-body">
+                    <div class="ranking">#1</div>
+                    <h5>Attack on Titan</h5>
+                    <p>Krasse Story und legendäre Plot-Twists.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/andor.jpg">
+                <div class="card-body">
+                    <div class="ranking">#2</div>
+                    <h5>Star Wars: Andor</h5>
+                    <p>Die beste Star Wars Serie.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/strangerthings.jpg">
+                <div class="card-body">
+                    <div class="ranking">#3</div>
+                    <h5>Stranger Things</h5>
+                    <p>Staffel 1–3 top, danach etwas schwächer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/fma.jpg">
+                <div class="card-body">
+                    <div class="ranking">#4</div>
+                    <h5>Fullmetal Alchemist</h5>
+                    <p>Sehr starke Story (Anime).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-custom">
+                <img src="images/mandalorian.jpg">
+                <div class="card-body">
+                    <div class="ranking">#5</div>
+                    <h5>The Mandalorian</h5>
+                    <p>Coole Star Wars Serie.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
